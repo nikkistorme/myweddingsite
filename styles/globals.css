@@ -11,6 +11,13 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Nunito';
+  background-color: #faf5ec;
+  text-align: center;
+  font-size: 10px;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 a {
@@ -18,10 +25,41 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+ul {
+  padding: 0;
 }
 
+li {
+  list-style-type: none;
+}
+
+/* ---- Header Styles ---- */
 h1 {
   font-family: 'Braggadocio';
+  font-size: 6rem;
+  color: #d95c46;
+  margin-bottom: 0;
+}
+
+.big-ol-asterisk {
+  font-family: 'Nunito';
+  font-size: 6rem;
+  color: #87898b;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.nav li {
+  font-size: 1.6rem;
+  color: #6f9694;
+  margin-right: 20px;
+}
+
+.active {
+  text-decoration: underline;
+  color: #628886 !important;
 }

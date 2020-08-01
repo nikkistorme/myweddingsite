@@ -1,65 +1,15 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
-
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
+    <section>
+      <div>
+        <p>To our dear friends & family,</p>
+        <p>In an ideal world, we would have you all together, sweating collectively under a relentless Austin sun while we exchange vows forever declaring to have a flawless, fight-free marriage for the rest of our lives.</p>
+        <p>However, considering the current state of the globe, we've decided to forgo a traditional wedding in an effort to keep everyone sage from Covid-19 (and to not have to delay getting married for an undetermined future date that is virus-free).</p>
+        <p>This means, we're tying the knot soon! In person, our wedding will be extremely small, but we'd be honored to have your virtual attendance!</p>
+        <p>We haven't given up hope to have an in-person celebration some time in the future-we just don't jknow when that will feasible. Until then, we're so excited to share our special day any way we can with the most important people in our lives.</p>
+        <p>All our love,</p>
+        <p>N & A</p>
+      </div>
+    </section>
   )
 }

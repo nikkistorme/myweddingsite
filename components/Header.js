@@ -1,25 +1,49 @@
 import React from 'react';
-import Link from 'next/link';
-import {useRouter} from 'next/router';
+import styled from 'styled-components';
 
-const isCurrentPage = (pathname, link_name) => pathname === link_name ? true : false
+import Footnote from './Footnote.js';
+import Nav from './Nav.js';
 
-export default function() {
-  const router = useRouter();
+const HeaderContainer = styled.header`
+  margin-bottom: 5vw;
+`
+
+const HeaderNames = styled.h1`
+  font-family: 'Braggadocio';
+  font-size: 9vw;
+  line-height: 0.8;
+  color: #d95c46;
+  margin: 45px 0 0 0;
+  position: relative;
+  @media (min-width: 889px) {
+    font-size: 8rem;
+  }
+`
+
+const BigOlAsterisk = styled.span`
+  font-family: 'Nunito';
+  font-size: 9vw;
+  color: #87898b;
+  position: absolute;
+  top: -25%;
+  @media (min-width: 667px) {
+    font-size: 6rem;
+  }
+`
+
+export default function Header() {
   return (
-    <header>
-      <h1>
+    <HeaderContainer>
+      <HeaderNames>
         nikki & alison
-        <span className="big-ol-asterisk">*</span>
-      </h1>
-      <nav>
-        <ul className="nav">
-          <li className={isCurrentPage(router.pathname, "/") ? "active" : null}><Link href="/"><a>You're Invited!</a></Link></li>
-          <li className={isCurrentPage(router.pathname, "/details") ? "active" : null}><Link href="/details"><a>Wedding Details</a></Link></li>
-          <li className={isCurrentPage(router.pathname, "/our-story") ? "active" : null}><Link href="/our-story"><a>Our Story</a></Link></li>
-          <li className={isCurrentPage(router.pathname, "/registry") ? "active" : null}><Link href="/registry"><a>Registry</a></Link></li>
-        </ul>
-      </nav>
-    </header>
+        <BigOlAsterisk>*</BigOlAsterisk>
+      </HeaderNames>
+      <div className="mobile-only">
+        <Footnote />
+      </div>
+      <div className="desktop-only">
+        <Nav />
+      </div>
+    </HeaderContainer>
   )
 }

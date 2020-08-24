@@ -5,6 +5,27 @@
 @font-face {
   font-family: 'Nunito';
   src: url(/fonts/Nunito-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Nunito';
+  src: url(/fonts/Nunito-SemiBold.ttf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Nunito';
+  src: url(/fonts/Nunito-Bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Nunito';
+  src: url(/fonts/Nunito-ExtraBold.ttf);
+  font-weight: 800;
+}
+@font-face {
+  font-family: 'Nunito';
+  src: url(/fonts/Nunito-Black.ttf);
+  font-weight: 900;
 }
 html,
 body {
@@ -14,6 +35,11 @@ body {
   background-color: #faf5ec;
   text-align: center;
   font-size: 10px;
+  position: relative;
+}
+
+#main {
+  padding-bottom: 5vw;
 }
 
 * {
@@ -33,33 +59,30 @@ li {
   list-style-type: none;
 }
 
-/* ---- Header Styles ---- */
-h1 {
-  font-family: 'Braggadocio';
-  font-size: 6rem;
-  color: #d95c46;
-  margin-bottom: 0;
+p {
+  font-size: 1.4rem;
 }
 
-.big-ol-asterisk {
-  font-family: 'Nunito';
-  font-size: 6rem;
-  color: #87898b;
+p:first-child {
+  margin-top: 0;
 }
 
-nav ul {
-  display: flex;
-  justify-content: center;
-  margin: 0;
+#main {
+  transition: margin-left .5s;
 }
 
-.nav li {
-  font-size: 1.6rem;
-  color: #6f9694;
-  margin-right: 20px;
+@media (max-width: 679px) {
+  .desktop-only {
+    display: none;
+  }
+}
+@media (min-width: 680px) {
+  .mobile-only {
+    display: none;
+  }
 }
 
-.active {
-  text-decoration: underline;
-  color: #628886 !important;
+/* ---- Our Story Styles ---- */
+.story-divider {
+  flex: .1;
 }

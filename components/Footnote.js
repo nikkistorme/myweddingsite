@@ -15,7 +15,7 @@ const FootnoteContainer = styled.div`
 export default function Footnote() {
   return (
     <FootnoteContainer>
-      <span>*are getting hitched virtually!</span>
+      <span>*virtually</span>
     </FootnoteContainer>
   )
 }

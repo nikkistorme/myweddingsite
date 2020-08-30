@@ -6,7 +6,6 @@ import Nav from './Nav.js'
 const SideNav = styled.div`
   width: 65vw;
   max-width: 280px;
-  /* height: 280px; */
   height: 100%;
   position: fixed;
   z-index: 1;
@@ -24,6 +23,15 @@ const SideNav = styled.div`
     box-shadow: 5px 5px 100px rgba(0,0,0,.5);
   }
 `
+
+const Signature = styled.span`
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  font-family: 'Braggadocio';
+  font-size: 3rem;
+  color: #d95c46;
+`;
 
 const HamburgerContainer = styled.div`
   cursor: pointer;
@@ -88,6 +96,7 @@ export default class Hamburger extends React.Component {
       <React.Fragment>
         <SideNav id="side-nav">
           <Nav />
+          <Signature>n&a</Signature>
         </SideNav>
         <HamburgerContainer onClick={() => this.ToggleHamburger()}>
           <BackCircle />

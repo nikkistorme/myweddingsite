@@ -1,6 +1,14 @@
 import styled from 'styled-components';
 
-import { MainSection } from '../components/styles/Main.js';
+const HomeContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @media (min-width: 900px) {
+    flex-direction: row;
+  }
+`;
 
 const HomeImage = styled.div`
   width: 100%;
@@ -36,7 +44,7 @@ const HomeMessage = styled.div`
 
 export default function Home() {
   return (
-    <MainSection>
+    <HomeContainer>
       <HomeImage>
         <img src="couple-4.jpeg" alt="the happy couple"/>
       </HomeImage>
@@ -49,6 +57,6 @@ export default function Home() {
         <p>All our love,</p>
         <p>N & A</p>
       </HomeMessage>
-    </MainSection>
+    </HomeContainer>
   )
 }

@@ -4,6 +4,8 @@ import Header from './Header';
 import Footer from './Footer';
 import Meta from './Meta';
 import Hamburger from './Hamburger';
+import { MainSection } from './styles/Main.js';
+
 
 export default class Page extends React.Component {
   render() {
@@ -12,7 +14,7 @@ export default class Page extends React.Component {
         <Meta />
         <Hamburger />
         <Header />
-        <div id="main">{this.props.children}</div>
+        <MainSection id="main" role="main">{this.props.children}</MainSection>
         <Footer />
       </React.Fragment>
     )

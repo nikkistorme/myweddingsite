@@ -5,11 +5,8 @@ import Footnote from './Footnote.js';
 
 const FooterContainer = styled.footer`
   position: absolute;
-  bottom: 0;
+  bottom: -16px;
   right: 0;
-  @media (max-width: 679px) {
-    display: none;
-  }
 `;
 
 export default function Footer() {

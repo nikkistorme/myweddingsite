@@ -6,11 +6,9 @@ import Footnote from './Footnote.js';
 const FooterContainer = styled.footer`
   width: 100%;
   p {
+    margin-top: 5vh;
     font-size: 1.2rem;
-  }
-  a {
-    color: #4F5454;
-    text-decoration: underline;
+    color: #b0afad;
   }
 `;
 
@@ -18,7 +16,7 @@ export default function Footer() {
   return (
     <FooterContainer>
       <Footnote />
-      <p>Development by <a href="https://nikkibright.com" target="_blank" rel="noreferrer" rel="noopener">Nikki Bright</a>, Design by Alison Stoos</p>
+      <p>Development by Nikki Bright, Design by Alison Stoos</p>
     </FooterContainer>
   )
 }

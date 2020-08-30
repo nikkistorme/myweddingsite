@@ -8,7 +8,7 @@ import Hamburger from './Hamburger';
 import { MainSection } from './styles/Main.js';
 
 const HeightContainer = styled.div`
-  min-height: 92vh;
+  min-height: 88vh;
 `;
 
 export default class Page extends React.Component {
@@ -33,9 +33,9 @@ export default class Page extends React.Component {
       <React.Fragment>
         <Meta />
         <Hamburger sideNavOpen={this.state.sideNavOpen} toggleSideNav={this.toggleSideNavHamburger} />
-        <HeightContainer>
+        <HeightContainer onClick={() => this.toggleSideNavPage()}>
           <Header toggleSideNav={this.toggleSideNavPage} />
-          <MainSection id="main" role="main" onClick={() => this.toggleSideNavPage()}>{this.props.children}</MainSection>
+          <MainSection id="main" role="main">{this.props.children}</MainSection>
         </HeightContainer>
         <Footer />
       </React.Fragment>

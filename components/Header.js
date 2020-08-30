@@ -21,17 +21,6 @@ const HeaderNames = styled.h1`
   }
 `
 
-const BigOlAsterisk = styled.span`
-  font-family: 'Nunito';
-  font-size: 9vw;
-  color: #4F5454;
-  position: absolute;
-  top: -25%;
-  @media (min-width: 667px) {
-    font-size: 6rem;
-  }
-`
-
 const SubHeader = styled.span`
   font-family: 'Nunito';
   font-size: 3.5vw;
@@ -46,10 +35,9 @@ const SubHeader = styled.span`
 
 export default function Header(props) {
   return (
-    <HeaderContainer onClick={() => props.toggleSideNav()}>
+    <HeaderContainer>
       <HeaderNames>
         nikki & alison
-        {/* <BigOlAsterisk>*</BigOlAsterisk> */}
         <SubHeader>are getting hitched!*</SubHeader>
       </HeaderNames>
       <div className="desktop-only">

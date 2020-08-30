@@ -68,7 +68,7 @@ export default function Details() {
       </DetailsRow>
       <DetailsRow>
         <h3>How:</h3>
-        <p>Kindly click this link to attend <a href="/">www.weddinglink.com</a></p>
+        <p>A link to the livestream will be posted here closer to the date.</p>
       </DetailsRow>
     </DetailsContainer>
   )

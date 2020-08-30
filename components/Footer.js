@@ -9,7 +9,7 @@ const FooterContainer = styled.footer`
     font-size: 1.2rem;
   }
   a {
-    color: #d95c46;
+    color: #4F5454;
     text-decoration: underline;
   }
 `;

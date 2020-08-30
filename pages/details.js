@@ -2,6 +2,14 @@ import styled from 'styled-components';
 
 import { FunkyBorderBottomLeft, FunkyBorderTopRight } from '../components/styles/FunkyBorders.js';
 
+const DetailsHeader = styled.h2`
+  margin-left: 2vw;
+  text-align: left;
+  @media (min-width: 680px) {
+    display: none;
+  }
+`;
+
 const DetailsContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -47,29 +55,32 @@ const DetailsRow = styled.div`
 
 export default function Details() {
   return (
-    <DetailsContainer>
-      <FunkyBorderBottomLeft />
-      <FunkyBorderTopRight />
-      <DetailsRow>
-        <h3>Who:</h3>
-        <p>Nikki & Alison (and all of you!)</p>
-      </DetailsRow>
-      <DetailsRow>
-        <h3>What:</h3>
-        <p>Their virtual wedding ceremony</p>
-      </DetailsRow>
-      <DetailsRow>
-        <h3>Where:</h3>
-        <p>Travis County Courthouse / your computer screen</p>
-      </DetailsRow>
-      <DetailsRow>
-        <h3>When:</h3>
-        <p>November 21st 2020, 4pm CST</p>
-      </DetailsRow>
-      <DetailsRow>
-        <h3>How:</h3>
-        <p>A link to the livestream will be posted here closer to the date.</p>
-      </DetailsRow>
-    </DetailsContainer>
+    <React.Fragment>
+      <DetailsHeader>Details</DetailsHeader>
+      <DetailsContainer>
+        <FunkyBorderBottomLeft />
+        <FunkyBorderTopRight />
+        <DetailsRow>
+          <h3>Who:</h3>
+          <p>Nikki & Alison (and all of you!)</p>
+        </DetailsRow>
+        <DetailsRow>
+          <h3>What:</h3>
+          <p>Their virtual wedding ceremony</p>
+        </DetailsRow>
+        <DetailsRow>
+          <h3>Where:</h3>
+          <p>Travis County Courthouse / your computer screen</p>
+        </DetailsRow>
+        <DetailsRow>
+          <h3>When:</h3>
+          <p>November 21st 2020, 4pm CST</p>
+        </DetailsRow>
+        <DetailsRow>
+          <h3>How:</h3>
+          <p>A link to the livestream will be posted here closer to the date.</p>
+        </DetailsRow>
+      </DetailsContainer>
+    </React.Fragment>
   )
 }

@@ -31,6 +31,10 @@ const RegistryDescription = styled.div`
       flex-direction: column;
     }
   }
+  a {
+    color: #4F5454;
+    text-decoration: underline;
+  }
 `;
 
 const CarouselContainer = styled.div`
@@ -74,7 +78,7 @@ export default function Registry() {
             <li>Go on a food tour of Lisbon</li>
           </ol> */}
           <p>Of course, we feel so immensely blessed to have the people that we do in our lives, and being a part of our love story is the best gift you all could have given us. We can’t wait for the opportunity to see you all again!</p>
-          <p className="payment">Paypal: <a>paypal-link</a></p>
+          <p className="payment">Paypal: <a href="https://paypal.me/pools/c/8saHrteiGW">Nikki & Alison Honeymoon Fund</a></p>
           <p className="payment">Venmo: <span>@Alison-Stoos</span><span>@nikkistorme</span></p>
         </RegistryDescription>
         <CarouselContainer>

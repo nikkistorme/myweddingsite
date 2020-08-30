@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import Footnote from './Footnote.js';
 import Nav from './Nav.js';
 
 const HeaderContainer = styled.header`
@@ -25,7 +24,7 @@ const HeaderNames = styled.h1`
 const BigOlAsterisk = styled.span`
   font-family: 'Nunito';
   font-size: 9vw;
-  color: #87898b;
+  color: #4F5454;
   position: absolute;
   top: -25%;
   @media (min-width: 667px) {
@@ -36,23 +35,22 @@ const BigOlAsterisk = styled.span`
 const SubHeader = styled.span`
   font-family: 'Nunito';
   font-size: 3.5vw;
-  font-weight: initial;
-  color: #87898b;
+  color: #4F5454;
   position: absolute;
   right: 0;
   bottom: -15px;
-  @media (min-width: 458px) {
-    font-size: 1.6rem;
+  @media (min-width: 486px) {
+    font-size: 1.7rem;
   }
 `;
 
-export default function Header() {
+export default function Header(props) {
   return (
-    <HeaderContainer>
+    <HeaderContainer onClick={() => props.toggleSideNav()}>
       <HeaderNames>
         nikki & alison
         {/* <BigOlAsterisk>*</BigOlAsterisk> */}
-        <SubHeader>are getting hitched*</SubHeader>
+        <SubHeader>are getting hitched!*</SubHeader>
       </HeaderNames>
       <div className="desktop-only">
         <Nav />

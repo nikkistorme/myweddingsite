@@ -16,7 +16,7 @@ const SideNav = styled.div`
   padding-top: 60px;
   transition: 0.5s;
   will-change: width;
-  border-right: solid 3px #6f9694;
+  border-right: solid 2px #3E5656;
   margin-left: -3px;
   &.nav-open {
     left: 0;
@@ -26,10 +26,10 @@ const SideNav = styled.div`
 
 const Signature = styled.span`
   position: absolute;
-  right: 15px;
+  right: 5px;
   bottom: 15px;
   font-family: 'Braggadocio';
-  font-size: 3rem;
+  font-size: 2rem;
   color: #d95c46;
 `;
 
@@ -47,7 +47,7 @@ const BackCircle = styled.div`
   position: absolute;
   left: -10px;
   top: -10px;
-  background-color: #6f9694;
+  background-color: #3E5656;
   border-radius: 50%;
   z-index: 1;
   height: 50px;
@@ -85,22 +85,19 @@ export default class Hamburger extends React.Component {
 
   isCurrentPage = (pathname, link_name) => pathname === link_name ? true : false
 
-  ToggleHamburger = () => {
-    document.getElementById("hamburger-changer").classList.toggle("change");
-    document.getElementById("side-nav").classList.toggle("nav-open");
-    document.getElementById("main").classList.toggle("nav-open");
-  }
-   
   render() {
     return (
       <React.Fragment>
-        <SideNav id="side-nav">
+        <SideNav id="side-nav" className={this.props.sideNavOpen ? `nav-open` : null}>
           <Nav />
           <Signature>n&a</Signature>
         </SideNav>
-        <HamburgerContainer onClick={() => this.ToggleHamburger()}>
+        <HamburgerContainer onClick={() => {
+          console.log(this.props.sideNavOpen)
+          this.props.toggleSideNav();
+        }}>
           <BackCircle />
-          <Container id="hamburger-changer">
+          <Container id="hamburger-changer" className={this.props.sideNavOpen ? `change` : null}>
             <Bar></Bar>
             <Bar></Bar>
             <Bar></Bar>

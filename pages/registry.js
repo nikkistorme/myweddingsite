@@ -52,7 +52,7 @@ const controlsConfig = ({
   nextButtonText: ">",
   prevButtonText: "<",
   pagingDotsStyle: {
-    fill: "#6f9694",
+    fill: "#3E5656",
     stroke: "black"
   }
 })
@@ -64,7 +64,7 @@ export default function Registry() {
       <RegistryContainer>
         <RegistryDescription>
           <p>Some day in the future, when we are both pumped full of Covid vaccines, we plan to honeymoon in Portugal! Since we both have more than enough stuff filling our apartment (many things we’re still trying to convince the other to get rid of), we’re kindly requesting donations to our honeymoon fund in lieu of gifts from a traditional registry.</p>
-          <p>Our dream is to spend a little over a week exploring as much of the country as we can, splitting our time between the capital city of Lisbon and relaxing in the northern city of Porto. We’re excited to take in the incredible architecture, the vibrant city life, and eat more seafood and pastéis de nata than is advisable.</p>
+          <p>Our dream is to spend a little over a week exploring as much of the country as we can, splitting our time between the capital city of Lisbon and relaxing in the northern city of Porto. We’re excited to take in the incredible architecture, the vibrant city life, and eat more seafood and pastéis de nata than is medically advisable. We've included here a slideshow of what we imagine our trip might look like, brought to life through the photo-editing skills of our dear friend.</p>
           {/* <p>Our dream is to spend a little over a week exploring as much of the country as we can, splitting our time between the capital city of Lisbon and relaxing in the northern city of Porto. We’re excited to take in the incredible architecture, the vibrant city life, and eat more seafood and pastéis de nata than is advisable. Since our intended trip is still a way away—we’re crossing our fingers to go in May of 2022—we don’t have a firm itinerary yet. However, here are some things we are thinking of partaking in, and that your gift would go towards:</p> */}
           {/* <ol>
             <li>Visit the Mosteiro dos Jeronimos</li>
@@ -79,11 +79,9 @@ export default function Registry() {
         </RegistryDescription>
         <CarouselContainer>
           <Carousel
-            autoplay="true"
-            wrapAround="true"
-            defaultControlsConfig={controlsConfig}
-            initialSlideHeight="300"
-            initialSlideWidth="300">
+            autoplay={true}
+            wrapAround={true}
+            defaultControlsConfig={controlsConfig}>
             <img src="goof2crop.png" alt="what the happy couple would look like in Portugal 1" />
             <img src="goof3crop.png" alt="what the happy couple would look like in Portugal 2" />
             <img src="goof4crop.png" alt="what the happy couple would look like in Portugal 3" />

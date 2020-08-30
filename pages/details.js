@@ -7,7 +7,7 @@ const DetailsContainer = styled.div`
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
-  max-width: 600px;
+  max-width: 750px;
   min-height: 300px;
   padding: 1em;
   position: relative;

@@ -10,11 +10,13 @@
   "dependencies": {
     "next": "9.5.1",
     "next-fonts": "^1.4.0",
+    "nuka-carousel": "^4.7.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "styled-components": "^5.1.1"
   },
   "devDependencies": {
+    "babel-plugin-styled-components": "^1.11.1",
     "react-axe": "^3.5.3"
   }
 }

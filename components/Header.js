@@ -9,12 +9,14 @@ const HeaderContainer = styled.header`
 `
 
 const HeaderNames = styled.h1`
-  font-family: 'Braggadocio';
-  font-size: 9vw;
-  line-height: 0.8;
-  color: #d95c46;
-  margin: 45px 0 0 0;
+  display: inline-block;
   position: relative;
+  max-width: 752px;
+  margin: 45px auto 25px auto;
+  font-family: 'Braggadocio';
+  line-height: 0.8;
+  font-size: 9vw;
+  color: #d95c46;
   @media (min-width: 889px) {
     font-size: 8rem;
   }
@@ -31,16 +33,27 @@ const BigOlAsterisk = styled.span`
   }
 `
 
+const SubHeader = styled.span`
+  font-family: 'Nunito';
+  font-size: 3.5vw;
+  font-weight: initial;
+  color: #87898b;
+  position: absolute;
+  right: 0;
+  bottom: -15px;
+  @media (min-width: 458px) {
+    font-size: 1.6rem;
+  }
+`;
+
 export default function Header() {
   return (
     <HeaderContainer>
       <HeaderNames>
         nikki & alison
-        <BigOlAsterisk>*</BigOlAsterisk>
+        {/* <BigOlAsterisk>*</BigOlAsterisk> */}
+        <SubHeader>are getting hitched*</SubHeader>
       </HeaderNames>
-      <div className="mobile-only">
-        <Footnote />
-      </div>
       <div className="desktop-only">
         <Nav />
       </div>

@@ -3,23 +3,29 @@ import {useRouter} from 'next/router';
 import Link from 'next/link';
 import styled from 'styled-components';
 
-import { FunkyBorderBottomLeft } from '../components/styles/FunkyBorders.js';
-
 const Nav = styled.nav`
+  height: 100%;
+  border-left: 2px solid #87898b;
+  margin-left: 5vw;
+  @media (min-width: 680px) {
+    border: none;
+    margin: 0;
+  }
   ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0;
+    margin: 0 0 0 5vw;
     @media (min-width: 680px) {
       flex-direction: row;
+      margin: 0;
     }
   }
   li {
     color: #6f9694;
     font-size: 1.7rem;
     text-align: left;
-    margin: 0 0 6vw 10vw;
+    margin: 0 0 20px 0;
     @media (min-width: 680px) {
       margin: 0 20px 0 0;
     }
@@ -36,7 +42,6 @@ export default function Header() {
   const router = useRouter();
   return (
     <Nav>
-      {/* <FunkyBorderBottomLeft /> */}
       <ul>
         <li className={isCurrentPage(router.pathname, "/") ? "active" : null}><Link href="/"><a>You're Invited!</a></Link></li>
         <li className={isCurrentPage(router.pathname, "/details") ? "active" : null}><Link href="/details"><a>Wedding Details</a></Link></li>

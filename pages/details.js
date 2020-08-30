@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
-import { MainSection } from '../components/styles/Main.js';
 import { FunkyBorderBottomLeft, FunkyBorderTopRight } from '../components/styles/FunkyBorders.js';
 
 const DetailsContainer = styled.div`
@@ -48,31 +47,29 @@ const DetailsRow = styled.div`
 
 export default function Details() {
   return (
-    <MainSection>
-      <DetailsContainer>
-        <FunkyBorderBottomLeft />
-        <FunkyBorderTopRight />
-        <DetailsRow>
-          <h3>Who:</h3>
-          <p>Nikki & Alison (and all of you!)</p>
-        </DetailsRow>
-        <DetailsRow>
-          <h3>What:</h3>
-          <p>Their virtual wedding ceremony</p>
-        </DetailsRow>
-        <DetailsRow>
-          <h3>Where:</h3>
-          <p>Travis County Courthouse / your computer screen</p>
-        </DetailsRow>
-        <DetailsRow>
-          <h3>When:</h3>
-          <p>November 21st 2020, 4pm CST</p>
-        </DetailsRow>
-        <DetailsRow>
-          <h3>How:</h3>
-          <p>Kindly click this link to attend <a href="/">www.weddinglink.com</a></p>
-        </DetailsRow>
-      </DetailsContainer>
-    </MainSection>
+    <DetailsContainer>
+      <FunkyBorderBottomLeft />
+      <FunkyBorderTopRight />
+      <DetailsRow>
+        <h3>Who:</h3>
+        <p>Nikki & Alison (and all of you!)</p>
+      </DetailsRow>
+      <DetailsRow>
+        <h3>What:</h3>
+        <p>Their virtual wedding ceremony</p>
+      </DetailsRow>
+      <DetailsRow>
+        <h3>Where:</h3>
+        <p>Travis County Courthouse / your computer screen</p>
+      </DetailsRow>
+      <DetailsRow>
+        <h3>When:</h3>
+        <p>November 21st 2020, 4pm CST</p>
+      </DetailsRow>
+      <DetailsRow>
+        <h3>How:</h3>
+        <p>Kindly click this link to attend <a href="/">www.weddinglink.com</a></p>
+      </DetailsRow>
+    </DetailsContainer>
   )
 }

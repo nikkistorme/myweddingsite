@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 const Nav = styled.nav`
   height: 100%;
-  border-left: 2px solid #87898b;
+  border-left: 2px solid #4F5454;
   margin-left: 5vw;
   @media (min-width: 680px) {
     border: none;
@@ -22,17 +22,17 @@ const Nav = styled.nav`
     }
   }
   li {
-    color: #6f9694;
-    font-size: 1.7rem;
-    text-align: left;
     margin: 0 0 20px 0;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #3E5656;
+    text-align: left;
     @media (min-width: 680px) {
       margin: 0 20px 0 0;
     }
   }
   .active {
     text-decoration: underline;
-    color: #628886 !important;
   }
 `
 
@@ -41,7 +41,7 @@ const isCurrentPage = (pathname, link_name) => pathname === link_name ? true : f
 export default function Header() {
   const router = useRouter();
   return (
-    <Nav>
+    <Nav role="navigation">
       <ul>
         <li className={isCurrentPage(router.pathname, "/") ? "active" : null}><Link href="/"><a>You're Invited!</a></Link></li>
         <li className={isCurrentPage(router.pathname, "/details") ? "active" : null}><Link href="/details"><a>Wedding Details</a></Link></li>

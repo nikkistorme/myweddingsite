@@ -90,6 +90,7 @@ export default function Registry() {
             <img src="goof3crop.png" alt="what the happy couple would look like in Portugal 2" />
             <img src="goof4crop.png" alt="what the happy couple would look like in Portugal 3" />
             <img src="megagoof.png" alt="what the happy couple would look like in Portugal 4" />
+            <img src="cavegoof.png" alt="what the happy couple would look like in Portugal 5" />
           </Carousel>
           <p>Photo art by Jon Henson</p>
         </CarouselContainer>

@@ -16,7 +16,7 @@ export default function Footer() {
   return (
     <FooterContainer>
       <Footnote />
-      <p>Development by Nikki Bright, Design by Alison Stoos</p>
+      <p>Development by Nikki, Design by Alison</p>
     </FooterContainer>
   )
 }

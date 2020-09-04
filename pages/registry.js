@@ -18,7 +18,7 @@ const RegistryContainer = styled.div`
 `;
 
 const RegistryDescription = styled.div`
-  max-width: 442px;
+  max-width: 432px;
   margin: 5vw 2vw;
   @media (min-width: 982px) {
     margin: 0 2vw;

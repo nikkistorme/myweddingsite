@@ -26,9 +26,11 @@ const DetailsRow = styled.div`
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
+  z-index: 2;
   &:last-child {
     margin-bottom: 0;
-    * {
+    h3,
+    ul {
       @media (min-width: 1000px) {
         margin-top: 30px;
       }
@@ -47,9 +49,20 @@ const DetailsRow = styled.div`
     flex: 1;
     font-weight: 900;
   }
-  p {
+  ul {
+    max-width: 500px;
+    text-align: left;
+  }
+  p,
+  li {
     flex: 4;
     text-align: right;
+    margin-bottom: 5px;
+  }
+  a {
+    font-weight: 600;
+    color: #3E5656;
+    text-decoration: underline;
   }
 `;
 
@@ -78,7 +91,15 @@ export default function Details() {
         </DetailsRow>
         <DetailsRow>
           <h3>How:</h3>
-          <p>A link to the livestream will be posted here closer to the date.</p>
+          <ul>
+            <li>Click <a href="https://kwri.zoom.us/j/97712613427?pwd=WWh4UXkxc2trYTBaWjdPaVNybUpnUT09" target="_blank">here</a> access the zoom call for the ceremony</li>
+            <li>The call will be joinable starting at 3:30pm CST</li>
+            <li>If prompted, the passcode is 112120</li>
+            <li>Please keep your audio muted, but your cameras can be on!</li>
+            <li>When the ceremony is about to begin, Nikki will join the call</li>
+            <li>It's recommended to "pin" Nikki's video to see all the action!</li>
+            <li>After the ceremony, the happy couple will stop by to say hi before going on their way!</li>
+          </ul>
         </DetailsRow>
       </DetailsContainer>
     </React.Fragment>

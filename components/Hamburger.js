@@ -4,20 +4,20 @@ import styled from 'styled-components';
 import Nav from './Nav.js'
 
 const SideNav = styled.div`
+  position: fixed;
+  top: 0;
+  left: -65vw;
   width: 65vw;
   max-width: 280px;
   height: 100%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: -65vw;
-  background-color: #faf5ec;
-  overflow-x: hidden;
   padding-top: 60px;
+  margin-left: -3px;
+  z-index: 3;
+  border-right: solid 2px #3E5656;
+  overflow-x: hidden;
+  background-color: #faf5ec;
   transition: 0.5s;
   will-change: width;
-  border-right: solid 2px #3E5656;
-  margin-left: -3px;
   &.nav-open {
     left: 0;
     box-shadow: 5px 5px 100px rgba(0,0,0,.5);

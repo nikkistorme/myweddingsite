@@ -96,8 +96,8 @@ export default function Details() {
             <li>The call will be joinable starting at 3:30pm CST</li>
             <li>If prompted, the passcode is 112120</li>
             <li>Please keep your audio muted, but your cameras can be on!</li>
-            <li>When the ceremony is about to begin, Nikki will join the call</li>
-            <li>It's recommended to "pin" Nikki's video to see all the action!</li>
+            <li>While you wait, please sign our <a href="http://pub31.bravenet.com/guestbook/2590951859" target="_blank">virtual guestbook</a> (Just use your name and a message, you can ignore the rest).</li>
+            <li>When Nikki joins the call, "pin" his video to see all the action!</li>
             <li>After the ceremony, the happy couple will stop by to say hi before going on their way!</li>
           </ul>
         </DetailsRow>
